@@ -1,0 +1,104 @@
+<html>
+<head>
+    <title>login page of proffesional</title>
+</head>
+<body>
+<style>
+#email {
+    width: 250px;
+    height: 29px;
+}
+#password {
+    width: 215px;
+    height: 29px;
+}
+fieldset {
+    width: 270px;
+    height: 396px;
+    margin-left: 0;
+    border: none;
+    background-color: lightgray;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #06538B;
+}
+#submit {
+    width: 110px;
+    height: 38px;
+    background-color: #06538B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+    color: #06538B;
+}
+#form {
+    display: flex;
+}
+#container{
+    height: 412px;
+    width: auto;
+    border: none;
+}
+#image {
+    height: 100%;
+    width: auto;
+    
+}
+#sign {
+    background: #06538B;
+    color: white;
+}
+#btn{
+    width: 35px;
+    padding: 0;
+    margin: 0;
+}
+.email-bg{
+    display: flex;
+    width: 250px;
+}
+</style>
+<form id="form">
+    <div id="container">
+        <img src="https://lh3.googleusercontent.com/pw/AP1GczPkYwHTNiuRNUPGzRbZg6o0Vgw11W67eaVPPUzId8upJbCBi4AWsmG_h2XScosZzl3e8nZh8NZ95cRj2obg1MPuUy9HRhPez3muzpAwJurytOIR153-wF0KcUCwNeROmd4_6jGZoNarXBdBBccwRBkg=w204-h426-s-no-gm?authuser=0" alt="" id="image"/>
+    </div>
+    <fieldset id="fieldset">
+        <h1 style="font-size: 26;">Login To Your Account</h1>
+     Email Address:<br>
+     <input type="email" placeholder="Enter your email" id="email"required><br><br>
+     Password:<br>
+     <div class="email-bg">
+        <input type="password"
+     placeholder="Enter your password;"id="password"required>
+     <button type="button" onclick="toggle_password()" id="btn">Show</button>
+     </div>
+     
+    <br><input type="checkbox"id="box"placeholder="remeber me ">Remember Me<br><br>
+    
+   <a href="https://achiit.github.io/dukaan-dashboard " onclick="link"id="sign"><button type="submit"id="submit" value="Sign in now">Sign in now</button></a><br><br>
+    
+    <a href="https://achiit.github.io/dukaan-lost-your-password">Lost Your Password?</a>
+</fieldset>
+</form>
+<script type="text/javascript" charset="utf-8">
+    var pass=document.getElementById("password");
+var btn=document.getElementById("btn");
+function toggle_password(){
+    if (pass.type==="password"){
+        pass.type="text";
+        btn.innerText="Hide";
+    }else if (pass.type==="text"){
+        pass.type="password";
+        btn.innerText="Show";
+    }
+}
+</script>
+</body>
+</html>
